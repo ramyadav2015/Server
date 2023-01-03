@@ -4,7 +4,7 @@ import javax.xml.transform.Source;
 
 import java.io.*;
 
-public class Server 
+public class ServerEvenodd 
 {
     
     public static void main(String[] args) 
@@ -26,8 +26,16 @@ public class Server
                 ps.println(data);
 
                Scanner rd = new Scanner(ss.getInputStream()); 
-               String sm = rd.nextLine();              
-                System.out.println(sm);
+               int sm = rd.nextInt();
+               if(sm%2==0)
+               {
+                    System.out.println("Enter num is sum ");
+               }
+               else
+               {
+                System.out.println("Enter num is odd ");
+               }              
+                
 
                 
             }

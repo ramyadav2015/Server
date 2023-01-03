@@ -1,12 +1,9 @@
 import java.net.*;
 import java.util.*;
-import javax.xml.transform.Source;
-
 import java.io.*;
 
-public class Server 
+public class DataInOutStreamclass 
 {
-    
     public static void main(String[] args) 
     {
         try
@@ -36,6 +33,6 @@ public class Server
         catch (Exception e)
         {
             System.out.println(e);
-        } 
-    }
+        }     
+    }    
 }

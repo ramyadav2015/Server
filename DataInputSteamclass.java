@@ -2,7 +2,7 @@ import java.net.*;
 import java.io.*;
 import java.util.*;
 
-public class Client 
+public class DataInputSteamclass 
 {
     public static void main(String[] args) 
     {
@@ -32,3 +32,4 @@ public class Client
         } 
     }
 }
+

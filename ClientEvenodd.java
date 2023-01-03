@@ -2,7 +2,7 @@ import java.net.*;
 import java.io.*;
 import java.util.*;
 
-public class Client 
+public class ClientEvenodd
 {
     public static void main(String[] args) 
     {
@@ -10,16 +10,16 @@ public class Client
         {
             Socket ob = new Socket("localhost",8450);
             System.out.println("Connected to server");   
-            String da=" ";
+            
 
-           while(!da.equals("stop"))           
+           while(true)           
            {      
                 Scanner rd = new Scanner(ob.getInputStream());           
                 String st = rd.nextLine();
                 System.out.println(st);
 
                 Scanner sc1 = new Scanner(System.in);
-                da = sc1.nextLine();
+                int da = sc1.nextInt();
                 PrintStream ps1 = new PrintStream(ob.getOutputStream());
                 ps1.println(da);
               
